@@ -8,14 +8,17 @@
 - Database Management System terdiri dari sekumpulan data yang saling berhubungan, program untuk mengakses data, serta menyediakan sistem yang nyaman dan efisien. Sistem Database juga mengatur data yang terstruktur dan tak terstruktur, serta melibatkan setiap aspek kehidupan. Adapun beberapa masalah dalam DMBS seperti _inconsistency data_, _duplicated data_, _difficulty in accessing data_, hingga masalah keamanan data.
 
 #### 📍 View of Data
-- Data models
-- Data abstraction:
-    * Physical level: cara data tersimpan
-    * Logical level: data tersimpan dalam database serta relasi antara data
-    * View level: menyembunyikan tipe data secara detail untuk tujuan keamanan data.
-  
-- _Contoh/Use-Case_
-- _Catatan Tambahan_
+- Data models: kerangka konseptual yang menentukan struktur, pengelolaan dan alur data dalam sistem.
+  * Data: informasi yang akan disimpan ke dalam database.
+  * D.Relationship: bagaimana data terhubung dengan data berbeda/ lainnya. Contohnya entity dosen akan terhubung dengan entity data mahasiswa melalui data mata kuliah.  
+  * D.Semantic: maksud/arti dari data, misalnya _department_ untuk menunjukkan fakultas.
+  * D.Constraints: aturan yang menentukan nilai/ _value_ dari data tersebut, seperti usia mahasiswa tidak boleh negatif.
+    
+- Data abstraction, untuk menyembunyikan kekompleksan data untuk menampilkan database melalui tiga level berikut:
+    * Physical level: menjelaskan cara data disimpan.
+    * Logical level: menjelaskan bahwa data tersimpan dalam database serta relasi antara data.
+    * View level: menjelaskan menyembunyikan tipe data secara detail untuk tujuan keamanan data.
+
 
 #### 📍 DB Languages, Design, Architecture, and Users and Administrator
 - _Poin-poin Utama_
