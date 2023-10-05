@@ -14,7 +14,7 @@
   * D.Semantic: maksud/arti dari data, misalnya _department_ untuk menunjukkan fakultas.
   * D.Constraints: aturan yang menentukan nilai/ _value_ dari data tersebut, seperti usia mahasiswa tidak boleh negatif.
     
-- Data abstraction, untuk menyembunyikan kekompleksan data untuk menampilkan database melalui tiga level berikut:
+- Data abstraction, untuk menyembunyikan kompleksitas dari data untuk menampilkan database melalui tiga level berikut:
     * Physical level: menjelaskan cara data disimpan.
     * Logical level: menjelaskan bahwa data tersimpan dalam database serta relasi antara data.
     * View level: menjelaskan menyembunyikan tipe data secara detail untuk tujuan keamanan data.
