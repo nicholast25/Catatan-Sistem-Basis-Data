@@ -3,9 +3,9 @@
 ### 🗓️ Week 1: Introduction to Database (DB)
 
 #### 📍 Definition and Purpose of Database
-- _Poin-poin Utama_
-- _Contoh/Use-Case_
-- _Catatan Tambahan_
+- Database merupakan sekumupulan data yang terstruktur (seperti buku), sedangkan database management system merupakan perangkat lunak untuk membaca, menulis, dan mengelola data. Database digunakan untuk memastikan data tersimpan secara organisir dan mudah diakses.
+- Contohnya adalah database universitas yang terdiri dari kode mata kuliah, nama mata kuliah, dosen pengajar, periode ajaran, dan sebagainya. Aadapun dalam human resource universitas yang menyimpan informasi dosen, departemen, gaji, tax, dan sebagainya.
+- Database Management System terdiri dari sekumpulan data yang saling berhubungan, program untuk mengakses data, serta menyediakan sistem yang nyaman dan efisien. Sistem Database juga mengatur data yang terstruktur dan tak terstruktur, serta melibatkan setiap aspek kehidupan.
 
 #### 📍 View of Data
 - _Poin-poin Utama_
