@@ -10,9 +10,9 @@
 #### 📍 View of Data
 - Data models
 - Data abstraction:
-    -> Physical level: cara data tersimpan
-    -> Logical level: data tersimpan dalam database serta relasi antara data
-    -> View level: menyembunyikan tipe data secara detail untuk tujuan keamanan data.
+    * Physical level: cara data tersimpan
+    * Logical level: data tersimpan dalam database serta relasi antara data
+    * View level: menyembunyikan tipe data secara detail untuk tujuan keamanan data.
   
 - _Contoh/Use-Case_
 - _Catatan Tambahan_
