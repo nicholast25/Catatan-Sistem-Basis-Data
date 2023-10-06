@@ -35,15 +35,24 @@ Mencari jumlah pengajar yang mengajar pada waktu Spring 2018
   ```
  <br/>
 
-- Group By: Untuk mengelompokkan tuple-tuple yang memiliki value tertentu yang sama.
+- **Group By**: Untuk mengelompokkan tuple-tuple yang memiliki value tertentu yang sama.
      * Contoh: Mencari rata-rata gaji dari setiap departemen (kesamaan departemen)
     ```sql
-    select dept name, avg (salary) as avg salary
+    select dept_name, avg (salary) as avg_salary
     from instructor
-    group by dept name;
+    group by dept_name;
   ```
-  
   <br/>
+
+- **Having**: Digunakan setelah ada klausa **group by** untuk memberikan syarat.
+     * Contoh: Menampilkan data  rata-rata gaji berdasarkan departemen, yang lebih besar dari 42000
+    ```sql
+  select dept name, avg (salary) as avg_salary
+  from instructor
+  group by dept name
+  having avg (salary) > 42000;
+  ```
+  <br/>  <br/>
 
  
 #### 📍 Set Membership
@@ -51,10 +60,10 @@ Mencari jumlah pengajar yang mengajar pada waktu Spring 2018
 
    * Contoh: Memilih kelas yang diajarkan pada Fall 2017 dan juga ada di Spring 2018
 ```sql
-select distinct course id
+select distinct course_id
 from section
 where semester = 'Fall' and year= 2017 and
-course id in (select course id
+course id in (select course_id
 from section
 where semester = 'Spring' and year= 2018);
 ```
@@ -64,15 +73,16 @@ where semester = 'Spring' and year= 2018);
 
      * Contoh: Memilih kelas yang diajarkan pada Fall 2017, tetapi tidak pada Spring 2018
 ```sql
-select distinct course id
+select distinct course_id
 from section
 where semester = 'Fall' and year= 2017 and
-course id not in (select course id
+course id not in (select course_id
 from section
 where semester = 'Spring' and year= 2018);
 ```
 
 #### 📍 Set Comparison
+- Membandingkan nilai pada kumpulan _values_ dengan nilai lainnya.
 
 
 
