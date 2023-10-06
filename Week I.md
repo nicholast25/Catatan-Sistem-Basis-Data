@@ -68,5 +68,16 @@ The department table
       <br />
       <br />
 
-- Data Manipulation Language (DML) atau query language: mengakses dan perbaharui data yang dikelola oleh data model.
-  * Terdiri dari dua tipe: Procedural DML (mewajibkan user menentukan data yang diperlukan dan cara mendapatkannya), serta Declarative DML (mewajibkan user menentukan data tanpa dijelaskan cara mendapatkan datanya).
+- Data Manipulation Language (DML) atau query language: mengakses dan perbaharui data yang dikelola oleh data model. Terdiri dari dua tipe:
+   * Procedural DML (mewajibkan user menentukan data yang diperlukan dan cara mendapatkannya).
+   * Declarative DML (mewajibkan user menentukan data tanpa dijelaskan cara mendapatkan datanya).
+<br />
+
+- SQL query language digunakan untuk mengatur dan memberi query atau perintah dalam pengelolaan data. Misalkan: <br/>
+SELECT name FROM students WHERE grade='A';<br/>
+<br/> meminta data nama yang mendapatkan nilai A.
+<br/>
+
+- Database Design:
+ * Logical Design (Entity, Relationship, Attribute): Rancangan pembuatan database yang membutuhkan entitas, yang setiap entitas memiliki atribut, serta relasi entitas satu dengan yang lain.
+ * Physical Design (Tables and indexes, Storage, Security): Bagaimana data disimpan, diakses, dan diamankan, yang mana data-data sudah diimplementasikan ke nama-nama.
