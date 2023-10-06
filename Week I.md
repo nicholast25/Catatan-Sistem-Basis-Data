@@ -87,5 +87,9 @@ SELECT name FROM students WHERE grade='A';<br/>
  ![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/aaecc04d-1572-4374-9ff9-6ae3ac6d6df8)
 
 
+<br/><br/>
+
+ Ada empat jenis pengguna sistem basis data yang berbeda, yaitu naive user, pemrogram, analysts, dan administrator basis data. Naive user adalah pengguna yang kurang berpengalaman dan berinteraksi dengan sistem menggunakan antarmuka pengguna yang telah ditentukan sebelumnya, seperti aplikasi web atau mobile. Peemrograma berperan dalam menulis program aplikasi. Analysts berinteraksi dengan sistem tanpa menulis program dan biasanya menggunakan bahasa kueri basis data atau perangkat lunak analisis data. Administrator database memiliki kontrol sentral terhadap data dan program yang mengakses data tersebut, dan tugasnya meliputi definisi skema, pengaturan struktur penyimpanan, modifikasi skema, pengaturan izin akses data, dan pemeliharaan rutin seperti pencadangan data dan pemantauan kinerja.
+
 
 
