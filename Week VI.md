@@ -75,17 +75,29 @@ Output: <br/>
 
 
 #### 📍 Authorization
-- Authorization merupakan hak/akses yang bisa dimiliki user tertentu untuk melakukan beberapa hal pada database, seperti read (membaca), insert (menambahkan data baru), update (modif data tanpa didelete), serta delete. Adapun hak untuk modifikasi skema database, yaitu index (membuat dan menghapus indeks), resource (membuat relasi baru), alertation (menambah dan menghapus attribut dalam relasi), serta drop (menghapus relasi)
+- Authorization merupakan hak/akses yang bisa dimiliki user tertentu untuk melakukan beberapa hal pada database, seperti read (membaca), insert (menambahkan data baru), update (modif data tanpa didelete), serta delete. Adapun hak untuk modifikasi skema database, yaitu index (membuat dan menghapus indeks), resource (membuat relasi baru), alertation (menambah dan menghapus attribut dalam relasi), serta drop (menghapus relasi).
 - Grant statment digunakan untuk memberi authorization atau akses
    ```sql
    Grant <privilege list> on <relation or view> to <user list>
    ```
-<user list> bisa berupa user-id, public, atau role (untuk membedakan dari user” lain
+<user list> bisa berupa user-id, public, atau role (untuk membedakan dari user” lain).
+   
 - Revoke statment digunakan untuk mencabut authorization atau akses
   ```sql
   Revoke <privilege list> on <relation or view> from <user list>
    ```
-
+- Contoh: 
+   ```sql
+   create user 'udin'@'localhost' identified by 'udins'; #membuat user baru dengan kata sandi
+   create role pengajar; #membuat role baru
+   
+   grant pengajar to udin'@'localhost; #memberi status pengajar ke udin
+   grant SELECT, DELETE on course to pengajar; #memberi akses ke udin untuk memilih dan delete data
+   
+   create role asisten; #membuat role baru asisten
+   grant asisten to pengajar; #memberikan status asisten ke pengajar
+   
+   ```
 
 
 
