@@ -33,9 +33,31 @@ Tuples dapat disimpan tanpa urutan.
 - Candidate Key (CK): minimal superkey, dalam arti atribut yang wajib dibutuhkan untuk identifikasi. Contohnya ID.
 - Primary Key (PK): dari Candidate Key, salah satunya dijadikan PK.
 - Foreign Key (FK): sekumpulan atribur yang digunakan untuk menghubungkan data dari dua tabel. Misalnya _dept_name_ pada tabel diatas (contoh paling awal) adalah FK yang menghubungkan relasi departemen.
+- Contoh Tabel:
+<br/><br/>
+  |ID_Class|name|dept_name|salary|
+  |---|---|----|----|
+  |22222|Einstein|Physics|95000|
+  |98123|Kim|Finance|100000|
+  |23231|Mat|History|84000|
+  |23121|Luke|History|84000|
+  |98231|Mat|Finance|84000|
+<br/>
+-schema  : instructor(ID_Class, name, dept_name, salary)<br/>
+-PK      : ID, karena departemen, dan gaji bisa saja sama, serta bisa ada satu pengajar dalam dua departemen.
+<br/><br/>
 
----
 
-(_Template di atas dapat diulangi untuk minggu-minggu berikutnya dengan topik dan sub-topik yang relevan._)
+#### 📍 The Relational Algebra
+- Terdapat Operasi Select, Project, C.Prod, Union, Set Diff, Rename. Untuk detailnya dapat dilihat pada gambar berikut: 
+![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/29c7e156-7877-4dab-9cf5-f61b5b575c31)
+<br/><br/>
 
----
+- Contoh **Select** And **Project**:
+![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/988e58ad-6812-44c5-99e8-d293e214045c)
+
+Query Select : σ dept name =“Physics” (instructor)
+Query Project: Π ID, name, salary (instructor)
+
+
+
