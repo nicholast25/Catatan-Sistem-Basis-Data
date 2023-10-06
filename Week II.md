@@ -32,8 +32,7 @@ Tuples dapat disimpan tanpa urutan.
 - Superkey (SK): sekumpulan satu atau lebih atribut untuk mengidentifikasi (membedakan) tuples dalam relasi. Contohnya (_ID_) dan (_ID,name_) bisa mengidentifikasi pengajar.
 - Candidate Key (CK): minimal superkey, dalam arti atribut yang wajib dibutuhkan untuk identifikasi. Contohnya ID.
 - Primary Key (PK): dari Candidate Key, salah satunya dijadikan PK.
-- Foreign Key (FK): sekumpulan atribur yang digunakan untuk menghubungkan data dari dua tabel.
-... (dan seterusnya untuk sub-topik lainnya di Minggu 1)
+- Foreign Key (FK): sekumpulan atribur yang digunakan untuk menghubungkan data dari dua tabel. Misalnya _dept_name_ pada tabel diatas (contoh paling awal) adalah FK yang menghubungkan relasi departemen.
 
 ---
 
