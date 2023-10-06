@@ -43,4 +43,50 @@
    ```
 - Jika ingin memasukkan judul buku kurang dari 3 karakter, maka data itu tidak bisa dimasukkan.
 
-        
+#### 📍 Assertion
+   ```sql
+   CREATE TABLE Authorss (
+   CHECK (
+SELECT AVG(Salary)
+FROM Authors
+WHERE Salary IS NOT NULL
+   )<70000;
+   );
+   ```
+
+Jika update data seperti berikut ini:
+   ```sql
+UPDATE Authors
+SET Salary = 75000
+WHERE Author_Name='Udin';
+   ```
+
+Maka, data tidak akan terupdate.
+
+#### 📍 Create Index
+- CREATE INDEX <index_name> ON <relation_name> (attribute_name);
+- Misal:
+   ```sql
+  CREATE INDEX studentID_index ON student(ID);
+  SELECT * FROM student WHERE ID = '12345';
+   ```
+Output: <br/>
+![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/25b491db-e9d4-4b76-81c6-3f8c39bd4b67)
+
+
+#### 📍 Authorization
+- Authorization merupakan hak/akses yang bisa dimiliki user tertentu untuk melakukan beberapa hal pada database, seperti read (membaca), insert (menambahkan data baru), update (modif data tanpa didelete), serta delete. Adapun hak untuk modifikasi skema database, yaitu index (membuat dan menghapus indeks), resource (membuat relasi baru), alertation (menambah dan menghapus attribut dalam relasi), serta drop (menghapus relasi)
+- Grant statment digunakan untuk memberi authorization atau akses
+   ```sql
+   Grant <privilege list> on <relation or view> to <user list>
+   ```
+<user list> bisa berupa user-id, public, atau role (untuk membedakan dari user” lain
+- Revoke statment digunakan untuk mencabut authorization atau akses
+  ```sql
+  Revoke <privilege list> on <relation or view> from <user list>
+   ```
+
+
+
+
+  
