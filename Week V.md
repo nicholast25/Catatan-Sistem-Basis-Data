@@ -109,6 +109,7 @@ on employee.empdept = department.deptname;
 Output:<br/>
 ![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/d3e5963e-5d2b-403c-a1bc-9af6909bf4c7)
 <br/>
+<br/>
 
 #### 📍 Views: 
 - View digunakan untuk membuat atau mensimplify query expression menjadi suatu nama view. Ketika view ini sudah dibuat, kita bisa gunakan untuk query lain untuk menjalankan programya. Contoh pengunaanya:
