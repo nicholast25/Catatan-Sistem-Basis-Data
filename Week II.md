@@ -1,6 +1,6 @@
 ## 📘 My Personal Notes
 
-### 🗓️ Week 1: Introduction to Database (DB)
+### 🗓️ Week 2
 
 #### 📍 Relation Schema and Instance
 - A1,A2,...,An adalah atribut
