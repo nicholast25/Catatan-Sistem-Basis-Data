@@ -82,12 +82,11 @@ SELECT name FROM students WHERE grade='A';<br/>
    * Logical Design (Entity, Relationship, Attribute): Rancangan pembuatan database yang membutuhkan entitas (seperti objek Buku), yang setiap entitas memiliki atribut (seperti judul, tahun, ISBN), serta relasi entitas satu dengan yang lain (seperti relasi objek Buku dengan objek Penerbit).
    * Physical Design (Tables and indexes, Storage, Security): Bagaimana data disimpan, diakses, dan diamankan, yang mana data-data sudah diimplementasikan ke nama-nama.
 
-- Data Architecture, Database User and Administrator: Skema dan pengguna-pengguna database dapat dilihat berikut ini: <br/>
+- Data Architecture, Database User and Administrator: Skema dan pengguna-pengguna database dapat dilihat berikut ini: <br/><br/>
 ![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/cb1a750e-9be5-43df-b98e-0cb8229fce51)
  ![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/aaecc04d-1572-4374-9ff9-6ae3ac6d6df8)
 
-
-<br/><br/>
+<br/>
 
  Ada empat jenis pengguna sistem basis data yang berbeda, yaitu naive user, pemrogram, analysts, dan administrator basis data. Naive user adalah pengguna yang kurang berpengalaman dan berinteraksi dengan sistem menggunakan antarmuka pengguna yang telah ditentukan sebelumnya, seperti aplikasi web atau mobile. Peemrograma berperan dalam menulis program aplikasi. Analysts berinteraksi dengan sistem tanpa menulis program dan biasanya menggunakan bahasa kueri basis data atau perangkat lunak analisis data. Administrator database memiliki kontrol sentral terhadap data dan program yang mengakses data tersebut, dan tugasnya meliputi definisi skema, pengaturan struktur penyimpanan, modifikasi skema, pengaturan izin akses data, dan pemeliharaan rutin seperti pencadangan data dan pemantauan kinerja.
 
