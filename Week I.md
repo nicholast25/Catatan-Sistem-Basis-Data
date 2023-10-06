@@ -81,3 +81,11 @@ SELECT name FROM students WHERE grade='A';<br/>
 - Database Design:
    * Logical Design (Entity, Relationship, Attribute): Rancangan pembuatan database yang membutuhkan entitas (seperti objek Buku), yang setiap entitas memiliki atribut (seperti judul, tahun, ISBN), serta relasi entitas satu dengan yang lain (seperti relasi objek Buku dengan objek Penerbit).
    * Physical Design (Tables and indexes, Storage, Security): Bagaimana data disimpan, diakses, dan diamankan, yang mana data-data sudah diimplementasikan ke nama-nama.
+
+- Data Architecture, Database User and Administrator: Skema dan pengguna-pengguna database dapat dilihat berikut ini: <br/>
+![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/cb1a750e-9be5-43df-b98e-0cb8229fce51)
+ ![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/aaecc04d-1572-4374-9ff9-6ae3ac6d6df8)
+
+
+
+
