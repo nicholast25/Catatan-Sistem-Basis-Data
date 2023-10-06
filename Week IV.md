@@ -109,6 +109,7 @@ where semester = 'Spring' and year= 2018);
    WHERE NOT EXISTS (SELECT * FROM teachers t as i WHERE t.course_id=c.course_id);
   ```
 <br/>
+
 #### 📍 Subqueries in The Form Clause
 - Contoh: Menampilkan data  rata-rata gaji berdasarkan departemen, yang lebih besar dari 42000
 
