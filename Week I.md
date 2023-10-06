@@ -79,5 +79,5 @@ SELECT name FROM students WHERE grade='A';<br/>
 <br/>
 
 - Database Design:
- * Logical Design (Entity, Relationship, Attribute): Rancangan pembuatan database yang membutuhkan entitas, yang setiap entitas memiliki atribut, serta relasi entitas satu dengan yang lain.
- * Physical Design (Tables and indexes, Storage, Security): Bagaimana data disimpan, diakses, dan diamankan, yang mana data-data sudah diimplementasikan ke nama-nama.
+   * Logical Design (Entity, Relationship, Attribute): Rancangan pembuatan database yang membutuhkan entitas (seperti objek Buku), yang setiap entitas memiliki atribut (seperti judul, tahun, ISBN), serta relasi entitas satu dengan yang lain (seperti relasi objek Buku dengan objek Penerbit).
+   * Physical Design (Tables and indexes, Storage, Security): Bagaimana data disimpan, diakses, dan diamankan, yang mana data-data sudah diimplementasikan ke nama-nama.
