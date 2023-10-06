@@ -31,4 +31,16 @@
     ```
 - Ketika _referential-integrity constraint_ dilanggar, prosedur umumnya adalah menolak tindakan penyebab pelanggaran itu.
 - **ON DELETE CASCADE** atau **ON DELETE SET NULL**, ketika baris dari tabel "induk" dihapus, maka semua baris yang relevan (yang memiliki foreign key yang merujuk pada baris tersebut) juga terhapus. Contoh: Jika kita menghapus "Udin" dari tabel _author_ dan foreign key dalam tabel _buku_ memiliki ON DELETE CASCADE.
+
+#### 📍 Check Conditions
+-  ```sql
+   CREATE TABLE Books (
+   Book_ID INT,
+   Book_Title VARCHAR(255)
+     CHECK (LENGTH(Book_Title)>=3),
+   Author_ID INT
+   );
+   ```
+- Jika ingin memasukkan judul buku kurang dari 3 karakter, maka data itu tidak bisa dimasukkan.
+
         
