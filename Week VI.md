@@ -25,5 +25,10 @@
     ```sql
     foreign key(Author_ID) references author
     ```
-
+- SQL memungkinkan daftar atribut dari relasi yang direferensikan ditentukan secara eksplisit
+    ```sql
+    foreign key(Author_ID) references author (Author_ID)
+    ```
+- Ketika _referential-integrity constraint_ dilanggar, prosedur umumnya adalah menolak tindakan penyebab pelanggaran itu.
+- **ON DELETE CASCADE** atau **ON DELETE SET NULL**, ketika baris dari tabel "induk" dihapus, maka semua baris yang relevan (yang memiliki foreign key yang merujuk pada baris tersebut) juga terhapus. Contoh: Jika kita menghapus "Udin" dari tabel _author_ dan foreign key dalam tabel _buku_ memiliki ON DELETE CASCADE.
         
