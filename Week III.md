@@ -1,6 +1,6 @@
 ## 📘 My Personal Notes
 
-### 🗓️ Week 3: 
+### 🗓️ Week 3: Introduction to SQL - Part I
 
 #### 📍 CREATE TABLE
 - Contoh: <br/>
