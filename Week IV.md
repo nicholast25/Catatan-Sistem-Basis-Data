@@ -84,13 +84,38 @@ where semester = 'Spring' and year= 2018);
 
 #### 📍 Set Comparison
 - Membandingkan nilai pada kumpulan _values_ dengan nilai lainnya.
-      * Contoh: Mencari nama pengajar yang memiliki gaji leih besar daripada setidaknya satu dari departemen Biologi.
+- Contoh: Mencari nama pengajar yang memiliki gaji leih besar daripada setidaknya satu dari departemen Biologi.
   ```sql
   select distinct T.name
   from instructor as T, instructor as S
   where T.salary > S.salary and S.dept name = 'Biology';
   ```
 
+#### 📍 Exists Clause 
+- **Exist**
+     * Mengembalikan nilai _true_ jika argumen pada subquerynya tidak kosong.
+     * Contoh: Menampilkan semua departemen yang memiliki minimal satu pengajar yang berhubunan dengan yang lain.
+   ```sql
+   SELECT dept_name
+   FROM department as d
+   WHERE EXISTS (SELECT * FROM instructor as i WHERE i.dept_name=d.dept_name);
+  ```
+- **Not Exists**: pengecualian terhadap subquery dalam argumen setelah _not exists_
 
-
+    * Contoh: Menampilkan semua ID kelas pada tabel course yang tidak ada di tabel instructor.
+   ```sql
+   SELECT course_id
+   FROM course as c
+   WHERE NOT EXISTS (SELECT * FROM teachers t as i WHERE t.course_id=c.course_id);
+  ```
+<br/>
 #### 📍 Subqueries in The Form Clause
+- Contoh: Menampilkan data  rata-rata gaji berdasarkan departemen, yang lebih besar dari 42000
+
+   ```sql
+   select dept name, avg salary
+  from (select dept name, avg (salary) as avg salary
+  from instructor
+  group by dept name)
+  where avg salary > 42000;
+  ```
