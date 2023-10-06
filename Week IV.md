@@ -73,16 +73,23 @@ where semester = 'Spring' and year= 2018);
 
      * Contoh: Memilih kelas yang diajarkan pada Fall 2017, tetapi tidak pada Spring 2018
 ```sql
-select distinct course_id
-from section
-where semester = 'Fall' and year= 2017 and
-course id not in (select course_id
-from section
-where semester = 'Spring' and year= 2018);
+  select distinct course_id
+  from section
+  where semester = 'Fall' and year= 2017 and
+  course id not in (select course_id
+  from section
+  where semester = 'Spring' and year= 2018);
 ```
+<br/>
 
 #### 📍 Set Comparison
 - Membandingkan nilai pada kumpulan _values_ dengan nilai lainnya.
+      * Contoh: Mencari nama pengajar yang memiliki gaji leih besar daripada setidaknya satu dari departemen Biologi.
+  ```sql
+  select distinct T.name
+  from instructor as T, instructor as S
+  where T.salary > S.salary and S.dept name = 'Biology';
+  ```
 
 
 
