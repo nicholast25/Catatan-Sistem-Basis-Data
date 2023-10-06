@@ -56,8 +56,34 @@ Tuples dapat disimpan tanpa urutan.
 - Contoh **Select** And **Project**:
 ![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/988e58ad-6812-44c5-99e8-d293e214045c)
 
-Query Select : σ dept name =“Physics” (instructor)
-Query Project: Π ID, name, salary (instructor)
+    * **Query Select** : σ _dept_name_ =“Physics” (instructor)
+    * **Query Project**: Π _ID, name, salary_ (instructor)
+
+<br/>
+
+- Contoh **Cartesian Product**:
+![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/b90126ab-63f8-4dd8-8db2-7443ec7b413d)
+
+    * **Query Cartesian Product** : σ _instructor.ID_ = _teachers.ID_(instructor x teachers)
+<br/>
+
+
+- Contoh **Union**:
+![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/e6918ccb-636b-487f-a289-0f28325ac220)
+
+    * **Query Union**:
+      <br/>Π _course_id_(σ _semester_="Spring" ^ _year_=2018(section)) U Π _course_id_(σ _semester_="Fall" ^ _year_ = 2017(section))
+
+<br/>
+
+- Contoh **Set Diff.** :<br/>
+![image](https://github.com/nicholast25/Catatan-Sistem-Basis-Data/assets/147079216/639297e4-3fe0-404a-8c98-1a6db9834211)
+
+     * **Query Set Diff.**:
+  <br/>Π _course_id_ (σ _semester_ =“Fall”∧ _year_=2017 (section)) −
+Π _course_id_ (σ _semester_ =“Spring” ∧ _year_=2018 (section))
+
+     * Course yang ada di Fall 2017 tetapi tidak ada di Spring 2018.
 
 
 
