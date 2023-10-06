@@ -1,6 +1,6 @@
 ## 📘 My Personal Notes
 
-### 🗓️ Week 2
+### 🗓️ Week 2: Introduction to The Relational Model
 
 #### 📍 Relation Schema and Instance
 - A1,A2,...,An adalah atribut
