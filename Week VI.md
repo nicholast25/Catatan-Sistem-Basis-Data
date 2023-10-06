@@ -18,5 +18,12 @@
   * PRIMARY KEY
   * CHECK (P), _P is predicate_
       - P harus memenuhi oleh setiap tuple dalam relasi, seperti memastikan setiap semester itu diantara Fall, Spring, atau Winter.
-   
+
+#### 📍 Referential Integrity
+- Memastikan bahwa nilai yang muncul di satu relasi untuk sekumpulan atribut tertentu juga muncul untuk sekumpulan atribut di relasi lain. Misalnya, Jika "Udin" adalah penulis yang ada di tuple pada relasi _buku_, maka terdapat tuple dalam relasi _author_ untuk "Udin".
+- Foreign key dapat ditentukan sebagai bagian dari pembuatan tabel dari SQL:
+    ```sql
+    foreign key(Author_ID) references author
+    ```
+
         
